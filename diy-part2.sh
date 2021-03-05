@@ -10,6 +10,10 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
+git clone https://github.com/tty228/luci-app-serverchan package/lean/luci-app-serverchan
+
+git clone -b master https://github.com/vernesong/OpenClash package/lean/openclash
+
 pushd package/lean
 rm -rf luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon luci-theme-argon
